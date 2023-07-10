@@ -12,14 +12,11 @@ int main(void)
 	
 	TIMER1_clear();
     TIMER1_set();
+	
+	OCR1A = 1999;
+	OCR1B = 50;
+	
 	TIMER1_start();
 	
-	// PORTB |= ( 1 << PINB2 );
-	
 	while (1) {}
-}
-
-// TOP
-ISR(OVF_vect) {
-	PORTB ^= ( 1 << PINB2 );
 }
