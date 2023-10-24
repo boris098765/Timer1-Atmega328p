@@ -3,7 +3,6 @@ Timer1.d Timer1.o: .././Timer1.c \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\stdint.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\bits\alltypes.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\bits\stdint.h \
- c:\program\ files\microchip\xc8\v2.36\avr\lib\gcc\avr\5.4.0\include\stdbool.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\io.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\sfr_defs.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\inttypes.h \
@@ -16,7 +15,8 @@ Timer1.d Timer1.o: .././Timer1.c \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\interrupt.h \
  .././Timer1.h \
  c:\program\ files\microchip\xc8\v2.36\avr\lib\gcc\avr\5.4.0\include\xc.h \
- c:\program\ files\microchip\xc8\v2.36\avr\lib\gcc\avr\5.4.0\include\cci.h
+ c:\program\ files\microchip\xc8\v2.36\avr\lib\gcc\avr\5.4.0\include\cci.h \
+ c:\program\ files\microchip\xc8\v2.36\avr\lib\gcc\avr\5.4.0\include\stdbool.h
 
 c:\program\ files\microchip\xc8\v2.36\avr\lib\gcc\avr\5.4.0\include\stdint.h:
 
@@ -25,8 +25,6 @@ c:\program\ files\microchip\xc8\v2.36\avr\avr\include\stdint.h:
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\bits\alltypes.h:
 
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\bits\stdint.h:
-
-c:\program\ files\microchip\xc8\v2.36\avr\lib\gcc\avr\5.4.0\include\stdbool.h:
 
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\io.h:
 
@@ -53,3 +51,5 @@ c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\interrupt.h:
 c:\program\ files\microchip\xc8\v2.36\avr\lib\gcc\avr\5.4.0\include\xc.h:
 
 c:\program\ files\microchip\xc8\v2.36\avr\lib\gcc\avr\5.4.0\include\cci.h:
+
+c:\program\ files\microchip\xc8\v2.36\avr\lib\gcc\avr\5.4.0\include\stdbool.h:

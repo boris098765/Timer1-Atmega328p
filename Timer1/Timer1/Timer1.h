@@ -1,7 +1,10 @@
+// TODO: Проверки setFrequency
+
 #ifndef TIMER1_H
 #define	TIMER1_H
 
 #include <xc.h>
+#include <stdbool.h>
 #include <avr/interrupt.h>
 
 #define F_CPU 16000000UL
@@ -27,7 +30,6 @@
 
 
 // ---------------------------------------------- //
-
 
 // Предделитель
 #define TIMER1_PRESCALER 1
@@ -56,18 +58,19 @@
 
 #define TCCR1B_PRESC_OFF 0b000
 #if TIMER1_PRESCALER == 1
-#define TCCR1B_PRESC 0b001
+	#define TCCR1B_PRESC 0b001
 #elif TIMER1_PRESCALER == 8
-#define TCCR1B_PRESC 0b010
+	#define TCCR1B_PRESC 0b010
 #elif TIMER1_PRESCALER == 64
-#define TCCR1B_PRESC 0b011
+	#define TCCR1B_PRESC 0b011
 #elif TIMER1_PRESCALER == 256
-#define TCCR1B_PRESC 0b100
+	#define TCCR1B_PRESC 0b100
 #elif TIMER1_PRESCALER == 1024
-#define TCCR1B_PRESC 0b101
+	#define TCCR1B_PRESC 0b101
 #else
-#error "BAD TIMER1 PRESCALER"
+	#error "BAD TIMER1 PRESCALER"
 #endif
+
 
 
 #if TIMER1_MODE == TIMER1_NORMAL_MODE          // 0
@@ -123,7 +126,7 @@
 // Проверка прерываний (сделал до 9-го)
 
 
-#if TIMSK1_ICIE1  == 1
+#if TIMSK1_ICIE1 == 1
 	#if (TIMER1_MODE == 0)
 		#error "MODE TIMER1_NORMAL_MODE HAS NO INTERRUPT TIMER1_CAPT_vect"
 	#endif
@@ -139,8 +142,8 @@
 	#if (TIMER1_MODE == 4)
 		#error "MODE TIMER1_CTC_OCR1A_MODE HAS NO INTERRUPT TIMER1_CAPT_vect"
 	#endif
-#else
-	#undef TIMER1_CAPT_vect
+	#else
+		#undef TIMER1_CAPT_vect
 #endif
 
 #if TIMSK1_OCIE1B == 1
@@ -153,16 +156,16 @@
 	#if (TIMER1_MODE == 9)
 		#error "MODE TIMER1_PWM_PFC_OCR1A_MODE HAS NO INTERRUPT TIMER1_COMPB_vect"
 	#endif
-#else
-	#undef TIMER1_COMPB_vect
+	#else
+		#undef TIMER1_COMPB_vect
 #endif
 
 #if TIMSK1_OCIE1A == 1
 	#if (TIMER1_MODE == 0)
 		#error "MODE TIMER1_NORMAL_MODE HAS NO INTERRUPT TIMER1_COMPA_vect"
 	#endif
-#else
-	#undef TIMER1_COMPA_vect
+	#else
+		#undef TIMER1_COMPA_vect
 #endif
 
 #if TIMSK1_TOIE1  == 1
@@ -178,8 +181,8 @@
 	#if (TIMER1_MODE == 7)
 		#error "MODE TIMER1_FAST_PWM_10_MODE HAS NO INTERRUPT TIMER1_OVF_vect"
 	#endif
-#else
-	#undef TIMER1_OVF_vect
+	#else
+		#undef TIMER1_OVF_vect
 #endif
 
 // ---------------------------------------------- //
@@ -195,17 +198,15 @@
 
 // ---------------------------------------------- //
 
-extern volatile uint16_t TIMER1_ICR;
-extern volatile uint16_t TIMER1_OCR;
+extern volatile uint16_t TIMER1_COMP;
 
 #define TIMER1_startInterrupts() TIMSK1 = TIMSK1_start
 #define TIMER1_stopInterrupts()  TIMSK1 = 0
 
 void TIMER1_clear();
-void TIMER1_set();
+void TIMER1_init();
 void TIMER1_start();
 void TIMER1_stop();
-bool TIMER1_setWidth(uint8_t width);
 bool TIMER1_setFrequency(uint16_t freq);
 
 // ---------------------------------------------- //

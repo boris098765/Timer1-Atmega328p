@@ -1,5 +1,7 @@
 Archive member included to satisfy reference by file (symbol)
 
+c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr6/memx-const\libgcc.a(_udivmodsi4.o)
+                              Timer1.o (__udivmodsi4)
 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(exit.o)
                               C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/xc8/avr/lib/avr6/memx-const/crtatmega2560.o (exit)
 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(_Exit.o)
@@ -17,6 +19,24 @@ Discarded input sections
  .text          0x0000000000000000        0x0 Timer1.o
  .data          0x0000000000000000        0x0 Timer1.o
  .bss           0x0000000000000000        0x0 Timer1.o
+ .text.TIMER1_stop
+                0x0000000000000000        0x8 Timer1.o
+ .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr6/memx-const\libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr6/memx-const\libgcc.a(_udivmodsi4.o)
+ .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr6/memx-const\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr6/memx-const\libgcc.a(_udivmodsi4.o)
+ .stack.descriptors
+                0x0000000000000000       0x1a c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr6/memx-const\libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr6/memx-const\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr6/memx-const\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr6/memx-const\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr6/memx-const\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr6/memx-const\libgcc.a(_udivmodsi4.o)
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(exit.o)
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(exit.o)
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(exit.o)
@@ -315,17 +335,19 @@ END GROUP
  .comment       0x000000000000002f       0x30 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(exit.o)
  .comment       0x000000000000002f       0x30 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(_Exit.o)
 
+.stack.descriptors.hdr
+                0x0000000000000000       0x1c
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr6/memx-const\libgcc.a(_udivmodsi4.o)
+ .stack.descriptors.hdr
+                0x000000000000000e        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr6/memx-const\libgcc.a(_exit.o)
+
 .note.GNU-stack
                 0x0000000000000000        0x0
  .note.GNU-stack
                 0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(exit.o)
  .note.GNU-stack
                 0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(_Exit.o)
-
-.stack.descriptors.hdr
-                0x0000000000000000        0xe
- .stack.descriptors.hdr
-                0x0000000000000000        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr6/memx-const\libgcc.a(_exit.o)
 
 .note.gnu.build-id
  *(.note.gnu.build-id)
@@ -342,47 +364,48 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x0000000000000000       0x50
+.debug_aranges  0x0000000000000000       0x60
  *(.debug_aranges)
  .debug_aranges
                 0x0000000000000000       0x20 main.o
  .debug_aranges
-                0x0000000000000020       0x30 Timer1.o
+                0x0000000000000020       0x40 Timer1.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x1101
+.debug_info     0x0000000000000000     0x1187
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0xbbc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/xc8/avr/lib/avr6/memx-const/crtatmega2560.o
- .debug_info    0x0000000000000bbc      0x2a7 main.o
- .debug_info    0x0000000000000e63      0x29e Timer1.o
+ .debug_info    0x0000000000000bbc      0x2c3 main.o
+ .debug_info    0x0000000000000e7f      0x308 Timer1.o
 
-.debug_abbrev   0x0000000000000000      0xbc8
+.debug_abbrev   0x0000000000000000      0xc1b
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000      0xb1a C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/xc8/avr/lib/avr6/memx-const/crtatmega2560.o
- .debug_abbrev  0x0000000000000b1a       0x6a main.o
- .debug_abbrev  0x0000000000000b84       0x44 Timer1.o
+ .debug_abbrev  0x0000000000000b1a       0x83 main.o
+ .debug_abbrev  0x0000000000000b9d       0x7e Timer1.o
 
-.debug_line     0x0000000000000000      0x383
+.debug_line     0x0000000000000000      0x3cd
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000      0x1fd C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/xc8/avr/lib/avr6/memx-const/crtatmega2560.o
  .debug_line    0x00000000000001fd       0xb5 main.o
- .debug_line    0x00000000000002b2       0xd1 Timer1.o
+ .debug_line    0x00000000000002b2      0x11b Timer1.o
 
-.debug_frame    0x0000000000000000       0x68
+.debug_frame    0x0000000000000000       0x88
  *(.debug_frame)
  .debug_frame   0x0000000000000000       0x24 main.o
- .debug_frame   0x0000000000000024       0x44 Timer1.o
+ .debug_frame   0x0000000000000024       0x64 Timer1.o
 
-.debug_str      0x0000000000000000      0x40b
+.debug_str      0x0000000000000000      0x420
  *(.debug_str)
  .debug_str     0x0000000000000000      0x3e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/xc8/avr/lib/avr6/memx-const/crtatmega2560.o
- .debug_str     0x00000000000003e6       0x25 main.o
- .debug_str     0x000000000000040b        0x0 Timer1.o
+ .debug_str     0x00000000000003e6       0x3a main.o
+ .debug_str     0x0000000000000420        0x0 Timer1.o
 
-.debug_loc
+.debug_loc      0x0000000000000000       0x5c
  *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x5c Timer1.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -402,10 +425,10 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x0000000000000000       0x30
+.debug_ranges   0x0000000000000000       0x40
  *(.debug_ranges)
  .debug_ranges  0x0000000000000000       0x10 main.o
- .debug_ranges  0x0000000000000010       0x20 Timer1.o
+ .debug_ranges  0x0000000000000010       0x30 Timer1.o
 
 .debug_macro
  *(.debug_macro)
@@ -418,110 +441,122 @@ LOAD data_init
  .note.gnu.avr.deviceinfo
                 0x0000000000000000       0x40 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/xc8/avr/lib/avr6/memx-const/crtatmega2560.o
 
+.text.libgcc.div
+                0x0000000000000100       0x44
+ .text.libgcc.div
+                0x0000000000000100       0x44 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr6/memx-const\libgcc.a(_udivmodsi4.o)
+                0x0000000000000100                __udivmodsi4
+
 .text.TIMER1_clear
-                0x0000000000000100       0x2e
+                0x0000000000000144       0x2e
  .text.TIMER1_clear
-                0x0000000000000100       0x2e Timer1.o
-                0x0000000000000100                TIMER1_clear
+                0x0000000000000144       0x2e Timer1.o
+                0x0000000000000144                TIMER1_clear
 
-.text.main      0x000000000000012e       0x2c
- .text.main     0x000000000000012e       0x2c main.o
-                0x000000000000012e                main
+.text.TIMER1_setFrequency
+                0x0000000000000172       0x2e
+ .text.TIMER1_setFrequency
+                0x0000000000000172       0x2e Timer1.o
+                0x0000000000000172                TIMER1_setFrequency
 
-.text.exit      0x000000000000015a       0x16
- .text.exit     0x000000000000015a       0x16 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(exit.o)
-                0x000000000000015a                exit
+.text.main      0x00000000000001a0       0x28
+ .text.main     0x00000000000001a0       0x28 main.o
+                0x00000000000001a0                main
 
-.text.TIMER1_set
-                0x0000000000000170       0x12
- .text.TIMER1_set
-                0x0000000000000170       0x12 Timer1.o
-                0x0000000000000170                TIMER1_set
+.text.exit      0x00000000000001c8       0x16
+ .text.exit     0x00000000000001c8       0x16 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(exit.o)
+                0x00000000000001c8                exit
+
+.text.TIMER1_init
+                0x00000000000001de       0x12
+ .text.TIMER1_init
+                0x00000000000001de       0x12 Timer1.o
+                0x00000000000001de                TIMER1_init
 
 .text.TIMER1_start
-                0x0000000000000182        0x8
+                0x00000000000001f0        0x8
  .text.TIMER1_start
-                0x0000000000000182        0x8 Timer1.o
-                0x0000000000000182                TIMER1_start
+                0x00000000000001f0        0x8 Timer1.o
+                0x00000000000001f0                TIMER1_start
 
-.text           0x000000000000018a        0x4
- .text          0x000000000000018a        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/xc8/avr/lib/avr6/memx-const/crtatmega2560.o
-                0x000000000000018a                __vector_38
-                0x000000000000018a                __vector_22
-                0x000000000000018a                __vector_28
-                0x000000000000018a                __vector_1
-                0x000000000000018a                __vector_32
-                0x000000000000018a                __vector_34
-                0x000000000000018a                __vector_24
-                0x000000000000018a                __vector_12
-                0x000000000000018a                __vector_55
-                0x000000000000018a                __vector_46
-                0x000000000000018a                __bad_interrupt
-                0x000000000000018a                __vector_6
-                0x000000000000018a                __vector_31
-                0x000000000000018a                __vector_35
-                0x000000000000018a                __vector_39
-                0x000000000000018a                __vector_3
-                0x000000000000018a                __vector_23
-                0x000000000000018a                __vector_30
-                0x000000000000018a                __vector_45
-                0x000000000000018a                __vector_25
-                0x000000000000018a                __vector_11
-                0x000000000000018a                __vector_54
-                0x000000000000018a                __vector_13
-                0x000000000000018a                __vector_17
-                0x000000000000018a                __vector_19
-                0x000000000000018a                __vector_56
-                0x000000000000018a                __vector_7
-                0x000000000000018a                __vector_49
-                0x000000000000018a                __vector_41
-                0x000000000000018a                __vector_43
-                0x000000000000018a                __vector_27
-                0x000000000000018a                __vector_5
-                0x000000000000018a                __vector_33
-                0x000000000000018a                __vector_47
-                0x000000000000018a                __vector_52
-                0x000000000000018a                __vector_37
-                0x000000000000018a                __vector_4
-                0x000000000000018a                __vector_44
-                0x000000000000018a                __vector_51
-                0x000000000000018a                __vector_9
-                0x000000000000018a                __vector_2
-                0x000000000000018a                __vector_21
-                0x000000000000018a                __vector_15
-                0x000000000000018a                __vector_36
-                0x000000000000018a                __vector_29
-                0x000000000000018a                __vector_40
-                0x000000000000018a                __vector_8
-                0x000000000000018a                __vector_26
-                0x000000000000018a                __vector_48
-                0x000000000000018a                __vector_14
-                0x000000000000018a                __vector_53
-                0x000000000000018a                __vector_10
-                0x000000000000018a                __vector_50
-                0x000000000000018a                __vector_16
-                0x000000000000018a                __vector_18
-                0x000000000000018a                __vector_20
-                0x000000000000018a                __vector_42
+.text           0x00000000000001f8        0x4
+ .text          0x00000000000001f8        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/xc8/avr/lib/avr6/memx-const/crtatmega2560.o
+                0x00000000000001f8                __vector_38
+                0x00000000000001f8                __vector_22
+                0x00000000000001f8                __vector_28
+                0x00000000000001f8                __vector_1
+                0x00000000000001f8                __vector_32
+                0x00000000000001f8                __vector_34
+                0x00000000000001f8                __vector_24
+                0x00000000000001f8                __vector_12
+                0x00000000000001f8                __vector_55
+                0x00000000000001f8                __vector_46
+                0x00000000000001f8                __bad_interrupt
+                0x00000000000001f8                __vector_6
+                0x00000000000001f8                __vector_31
+                0x00000000000001f8                __vector_35
+                0x00000000000001f8                __vector_39
+                0x00000000000001f8                __vector_3
+                0x00000000000001f8                __vector_23
+                0x00000000000001f8                __vector_30
+                0x00000000000001f8                __vector_45
+                0x00000000000001f8                __vector_25
+                0x00000000000001f8                __vector_11
+                0x00000000000001f8                __vector_54
+                0x00000000000001f8                __vector_13
+                0x00000000000001f8                __vector_17
+                0x00000000000001f8                __vector_19
+                0x00000000000001f8                __vector_56
+                0x00000000000001f8                __vector_7
+                0x00000000000001f8                __vector_49
+                0x00000000000001f8                __vector_41
+                0x00000000000001f8                __vector_43
+                0x00000000000001f8                __vector_27
+                0x00000000000001f8                __vector_5
+                0x00000000000001f8                __vector_33
+                0x00000000000001f8                __vector_47
+                0x00000000000001f8                __vector_52
+                0x00000000000001f8                __vector_37
+                0x00000000000001f8                __vector_4
+                0x00000000000001f8                __vector_44
+                0x00000000000001f8                __vector_51
+                0x00000000000001f8                __vector_9
+                0x00000000000001f8                __vector_2
+                0x00000000000001f8                __vector_21
+                0x00000000000001f8                __vector_15
+                0x00000000000001f8                __vector_36
+                0x00000000000001f8                __vector_29
+                0x00000000000001f8                __vector_40
+                0x00000000000001f8                __vector_8
+                0x00000000000001f8                __vector_26
+                0x00000000000001f8                __vector_48
+                0x00000000000001f8                __vector_14
+                0x00000000000001f8                __vector_53
+                0x00000000000001f8                __vector_10
+                0x00000000000001f8                __vector_50
+                0x00000000000001f8                __vector_16
+                0x00000000000001f8                __vector_18
+                0x00000000000001f8                __vector_20
+                0x00000000000001f8                __vector_42
 
-.text._Exit     0x000000000000018e        0x4
- .text._Exit    0x000000000000018e        0x4 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(_Exit.o)
-                0x000000000000018e                _Exit
+.text._Exit     0x00000000000001fc        0x4
+ .text._Exit    0x00000000000001fc        0x4 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(_Exit.o)
+                0x00000000000001fc                _Exit
 
 .text.__dummy_fini
-                0x0000000000000192        0x2
+                0x0000000000000200        0x2
  .text.__dummy_fini
-                0x0000000000000192        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(exit.o)
-                0x0000000000000192                _fini
+                0x0000000000000200        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(exit.o)
+                0x0000000000000200                _fini
 
 .text.__dummy_funcs_on_exit
-                0x0000000000000194        0x2
+                0x0000000000000202        0x2
  .text.__dummy_funcs_on_exit
-                0x0000000000000194        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(exit.o)
-                0x0000000000000194                __funcs_on_exit
+                0x0000000000000202        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(exit.o)
+                0x0000000000000202                __funcs_on_exit
 
 .text.__dummy_simulator_exit
-                0x0000000000000196        0x2
+                0x0000000000000204        0x2
  .text.__dummy_simulator_exit
-                0x0000000000000196        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(exit.o)
-                0x0000000000000196                __simulator_exit
+                0x0000000000000204        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6/memx-const\libc.a(exit.o)
+                0x0000000000000204                __simulator_exit

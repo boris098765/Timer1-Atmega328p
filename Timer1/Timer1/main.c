@@ -1,7 +1,7 @@
 #include <xc.h>
 #include <stdint.h>
 #include <avr/io.h>
-#include <avr/interrupt.h>
+
 #include "Timer1.h"
 
 int main(void)
@@ -11,9 +11,9 @@ int main(void)
 	sei();
 	
 	TIMER1_clear();
-    TIMER1_set();
+	TIMER1_init();
 	
-	OCR1A = 1999;
+	TIMER1_setFrequency(2000);
 	OCR1B = 50;
 	
 	TIMER1_start();
