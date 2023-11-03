@@ -3,15 +3,15 @@
   <executable name="Timer1.elf">                 
     <memory name="program">              
       <units>bytes</units>                 
-      <length>262144</length>                 
-      <used>518</used>                     
-      <free>261626</free>                     
+      <length>32768</length>                 
+      <used>782</used>                     
+      <free>31986</free>                     
     </memory>                              
     <memory name="data">                 
       <units>bytes</units>                 
-      <length>8192</length>                 
-      <used>0</used>                     
-      <free>8192</free>                     
+      <length>2048</length>                 
+      <used>24</used>                     
+      <free>2024</free>                     
     </memory>                              
   </executable>                            
 </project>                                 
